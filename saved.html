@@ -23,19 +23,21 @@
     <!-------------------------------------------------------->
     <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
     <!-------------------------------------------------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>  -->
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" /> -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="scripts/saved.js"></script>
+
 
 </head>
 
@@ -45,19 +47,40 @@
     <!------------------------------>
 
     <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav> -->
+    <nav id="navbarPlaceholder"></nav>
 
     <!-- the body of your page goes here -->
     <!-- stuff -->
+    <div class="container">
+        <h1>Saved Hikes for <span id=name-goes-here></span></h1>
+        <!-- Here is container for cards  -->
+        <div class="container">
+            <div id="hikeCardGroup" class="row row-cols-auto">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Templates for general use, not displayed -->
+    <template id="savedCardTemplate">
+        <div class="card py-2 mx-2 bg-light" style="width: 10rem;">
+            <img class="card-image card-img-top" src=" ..." alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-length">placeholder</p>
+                <br>
+                <a class="btn btn-secondary card-href" id="read-more">Read more ...</a>
+            </div>
+        </div>
+    </template>
 
     <!-- our own footer goes here-->
-    <nav id="footerPlaceholder"></nav> -->
+    <nav id="footerPlaceholder"></nav>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
-    <script src="./scripts/firebaseAPI_TEAM99.js"></script> -->
-    <script src="./scripts/skeleton.js"></script> -->
+    <script src="./scripts/firebaseAPI_TEAM99.js"></script> 
+    <script src="./scripts/skeleton.js"></script>
     <!-- <script src="./scripts/script.js"></script> -->
 
 </body>

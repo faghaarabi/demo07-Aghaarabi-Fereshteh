@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../myhike_Aghaarabi_Fereshteh"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demo07-Aghaarabi-Fereshteh"
+	}
+}
